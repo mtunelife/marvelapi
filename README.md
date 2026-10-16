@@ -68,4 +68,4 @@ Base path: `/api/characters`
 
 ## Deployed API
 
-**Live URL:** https://YOUR-SERVICE-NAME.onrender.com/api/characters
+**Live URL:** https://marvel-characters-api-4pjf.onrender.com/api/characters
