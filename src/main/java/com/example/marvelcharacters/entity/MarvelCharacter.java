@@ -23,6 +23,9 @@ public class MarvelCharacter {
 
     private String role;
 
+    @Column(length = 500)
+    private String imageUrl;
+
     public MarvelCharacter() {
     }
 
@@ -31,6 +34,7 @@ public class MarvelCharacter {
         this.description = description;
         this.species = species;
         this.role = role;
+        this.imageUrl = imageUrl; 
     }
 
     public Long getCharacterId() { return characterId; }
@@ -47,4 +51,7 @@ public class MarvelCharacter {
 
     public String getRole() { return role; }
     public void setRole(String role) { this.role = role; }
+
+    public String getImageUrl() { return imageUrl; }
+    public void setImageUrl(String imageUrl) { this.imageUrl = imageUrl; }
 }

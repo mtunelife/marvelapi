@@ -32,6 +32,10 @@ public class MarvelCharacterService {
         return repository.findAll();
     }
 
+        public List<String> getAllRoles() {
+        return repository.findDistinctRoles();
+    }
+
     public MarvelCharacter getById(Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new CharacterNotFoundException(id));
@@ -48,6 +52,7 @@ public class MarvelCharacterService {
         existing.setDescription(updated.getDescription());
         existing.setSpecies(updated.getSpecies());
         existing.setRole(updated.getRole());
+        existing.setImageUrl(updated.getImageUrl());
         return repository.save(existing);
     }
 
